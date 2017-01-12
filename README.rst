@@ -35,6 +35,14 @@ settings.py
 
     EXTAUTH_BACKEND = 'django_extauth.contrib.dummy'
 
+urls.py
+~~~~~~~
+
+.. code:: python
+    urlpatterns += [
+        url(r'^accounts/', include('django_extauth.urls')),
+    ]
+
 Backends
 --------
 
