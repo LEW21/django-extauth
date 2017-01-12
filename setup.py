@@ -7,7 +7,7 @@ with open('README.rst') as f:
 
 setup(
 	name = "django-extauth",
-	version = "0.1.1",
+	version = "0.1.2",
 	description = "External authentication/authorization support for Django",
 	long_description = readme,
 	author = "Linus Lewandowski",
@@ -18,7 +18,7 @@ setup(
 
     install_requires = ["django>=1.10.0"],
 
-	packages = ["django_extauth", "django_extauth.contrib", "django_extauth.contrib.gitlab"],
+	packages = ["django_extauth", "django_extauth.migrations", "django_extauth.contrib", "django_extauth.contrib.gitlab"],
 	package_data = {"": ["LICENSE"]},
 	package_dir = {"django_extauth": "django_extauth"},
 	zip_safe = True,
